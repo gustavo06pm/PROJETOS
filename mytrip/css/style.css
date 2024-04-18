@@ -132,7 +132,8 @@ nav a {
 }
 @media (max-width: 900px) {
     .card-item img {
-        width: 20vmin;
+        width: 30vmin;
+        height: 20vmin;
     }
     .cards{
         height: 100vh;
