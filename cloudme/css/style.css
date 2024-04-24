@@ -1,0 +1,116 @@
+:root{
+    --color-principal: #63444A;
+    --color-white: #fff;
+    --color-lightp: #755159;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.header-page{
+    background-color: var(--color-principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    color: var(--color-white);
+}
+.header-page h1{
+    display: flex;
+    align-items: center;
+    font-size: 4vmin;
+}
+.header-page ul{
+    display: flex;
+    align-items: flex-end;
+    list-style: none;
+    font-size: 2.5vmin;
+    gap: 30px;
+    padding-right: 3vmin;
+}
+.header-page a{
+    color: var(--color-white);
+    text-decoration: none;
+    transition: .2s;
+}
+.header-page a:hover{
+    background-color: var(--color-lightp);
+    border-radius: 10px;
+    padding: 2%;
+}
+section{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    padding: 8vmin;
+    gap: 3vmin;
+}
+section img{
+    width: 80%;
+}
+.info h2{
+    color: var(--color-principal);
+    font-size: 4.5vmin;    
+}
+.info p{
+    font-size: 2vmin;
+    text-align: justify;
+    padding-top: 4%;
+}
+.btn{
+    background-color: var(--color-principal);
+    width: fit-content;
+    padding: 3%;
+    margin-top: 7%;
+    display: flex;
+    border-radius: 10px;
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: 450;
+    transition: .5s;
+}
+.btn:hover{
+    color: var(--color-principal);
+    background-color: #fff;
+    border: 1px solid var(--color-principal);
+    scale: 1.1;
+}
+.container-2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.card-item{
+    border: 1px solid var(--color-principal);
+    box-shadow: 2px 2px 15px var(--color-principal);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: fit-content;
+    transition: scale .5s;
+}
+.card-item:hover{
+    scale: 1.1;
+}
+.card-item img{
+    width: 20%;
+}
+.card-item p{
+    font-size: 4vmin;
+    color: var(--color-principal);
+}
+@media (max-width: 1250px){
+    section{
+        width: 90%;
+        margin: auto;
+    }
+    section img{
+        width: 45%;
+    
+    }
+}
